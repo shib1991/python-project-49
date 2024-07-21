@@ -26,7 +26,7 @@ def main():
             num = random.randint(0, 1000)
             print(f"Question: {num}")
             answer = prompt.string("Your answer: ")
-            if is_prime(num) == True:
+            if is_prime(num) is True:
                 if answer == "Yes" or answer == "yes":
                     print("Correct!")
                     i += 1
@@ -35,7 +35,7 @@ def main():
                         f"{answer} is wrong answer ;( Correct answer was 'Yes'. \nLet's try again, {name}!'"
                     )
                     break
-            if is_prime(num) == False:
+            if is_prime(num) is False:
                 if answer == "No" or answer == "no":
                     print("Correct!")
                     i += 1

@@ -17,15 +17,14 @@ def main():
             operator = random.choice(expressions)
             result = eval(f"{random_num1}{operator}{random_num2}")
             print(f"Question: {random_num1} {operator} {random_num2}")
-            answer = prompt.string("Answer: ")
-            if result == int(answer):
-                print(f"Your answer: {answer}")
+            answ = prompt.string("Answer: ")
+            if result == int(answ):
+                print(f"Your answer: {answ}")
                 print("Correct!")
                 i += 1
             else:
-                print(
-                    f"{answer} is wrong answer ;( Correct answer was {result}. \nLet's try again, {name}!'"
-                )
+                print(f"{answ} is wrong answer ;( Correct answer was {result}.")
+                print(f"Let's try again, {name}!'")
                 break
         if i == 3:
             print(f"Congratulations, {name}!")
