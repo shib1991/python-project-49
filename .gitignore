@@ -1,2 +1,2 @@
-.venv/
+/.venv
 /for_tests.py
