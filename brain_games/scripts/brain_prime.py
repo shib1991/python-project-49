@@ -6,9 +6,7 @@ import math
 def is_prime(number):
     if number <= 1:
         return False
-    number_sqrt = int(math.sqrt(number))
-    divisors = range(2, (number_sqrt + 1))
-    for element in divisors:
+    for element in range(2, int(math.sqrt(number)) + 1):
         if number % element == 0:
             return False
     return True
@@ -21,30 +19,23 @@ def main():
 
     def prime_game():
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
-        i = 0
-        while i < 3:
+        correct_answers = 0
+
+        while correct_answers < 3:
             num = random.randint(0, 1000)
             print(f"Question: {num}")
-            answer = prompt.string("Your answer: ")
-            if is_prime(num) is True:
-                if answer == "Yes" or answer == "yes":
-                    print("Correct!")
-                    i += 1
-                else:
-                    print(
-                        f"{answer} is wrong answer ;( Correct answer was 'Yes'. \nLet's try again, {name}!'"
-                    )
-                    break
-            if is_prime(num) is False:
-                if answer == "No" or answer == "no":
-                    print("Correct!")
-                    i += 1
-                else:
-                    print(
-                        f"{answer} is wrong answer ;( Correct answer was 'no'. \nLet's try again, {name}!'"
-                    )
-                    break
-        if i == 3:
+            ans = prompt.string("Your answer: ").lower()
+
+            cor = "yes" if is_prime(num) else "no"
+
+            if ans == cor:
+                print("Correct!")
+                correct_answers += 1
+            else:
+                print(f"{ans} is wrong answer ;( Correct answer was '{cor}'.")
+                print(f"Let's try again, {name}!")
+                break
+        else:
             print(f"Congratulations, {name}!")
 
     prime_game()

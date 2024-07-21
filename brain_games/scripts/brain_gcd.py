@@ -22,9 +22,8 @@ def main():
                 print("Correct!")
                 i += 1
             else:
-                print(
-                    f"{answer} is wrong answer ;( Correct answer was {max_div}. \nLet's try again, {name}!'"
-                )
+                print(f"{max_div} is wrong answer ;( Correct answer was 'no'.'")
+                print(f"Let's try again, {name}!'")
                 break
         if i == 3:
             print(f"Congratulations, {name}!")
