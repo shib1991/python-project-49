@@ -19,7 +19,7 @@ def main():
             value = arithmetic_progression.index(random.choice(arithmetic_progression))
             correct_value=arithmetic_progression[value]
             arithmetic_progression[value] = '..'
-            print(f'Question:{arithmetic_progression}')
+            print(f'Question: {arithmetic_progression}')
             answer = prompt.string('Your answer: ')
             if correct_value == int(answer):
                 print('Correct!')

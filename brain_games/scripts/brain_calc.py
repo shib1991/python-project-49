@@ -15,7 +15,7 @@ def main():
             random_num2=random.randint(0,100)
             operator = random.choice(expressions)
             result = eval(f"{random_num1}{operator}{random_num2}")
-            print(f'Question:{random_num1} {operator} {random_num2}')
+            print(f'Question: {random_num1} {operator} {random_num2}')
             answer = prompt.string('Answer: ')
             if result == int(answer):
                 print(f'Your answer: {answer}')

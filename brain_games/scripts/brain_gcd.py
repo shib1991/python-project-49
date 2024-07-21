@@ -13,7 +13,7 @@ def main():
             random_num1=random.randint(0,100)
             random_num2=random.randint(0,100)
             max_div = math.gcd(random_num1,random_num2)
-            print(f'Question:{random_num1} {random_num2}')
+            print(f'Question: {random_num1} {random_num2}')
             answer = prompt.string('Answer: ')
             if max_div == int(answer):
                 print(f'Your answer: {answer}')

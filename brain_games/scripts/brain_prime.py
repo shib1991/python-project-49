@@ -19,7 +19,7 @@ def main():
         i=0
         while i < 3:
             num=random.randint(0,1000)
-            print(f'Question:{num}')
+            print(f'Question: {num}')
             answer = prompt.string('Your answer: ')
             if is_prime(num) == True:
                 if answer == 'Yes' or answer == 'yes':
