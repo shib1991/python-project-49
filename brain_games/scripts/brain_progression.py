@@ -9,7 +9,7 @@ def main():
         print('What is the result of the expression?')
         i=0
         while i < 3:
-            list_length = random.randint(5,10)
+            list_length = random.randint(6,10)
             num1 = random.randint(0,100)
             step = random.randint(0,20)
             arithmetic_progression=[]
