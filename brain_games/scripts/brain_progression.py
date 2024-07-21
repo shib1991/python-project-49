@@ -6,7 +6,7 @@ def main():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     def progression_game():
-        print('What is the result of the expression?')
+        print('What number is missing in the progression?')
         i=0
         while i < 3:
             list_length = random.randint(6,10)
