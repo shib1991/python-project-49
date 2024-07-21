@@ -23,7 +23,7 @@ def main():
                 print (f"{answer} is wrong answer ;( Correct answer was {max_div}. \nLet's try again, {name}!'")
                 break
         if i==3:
-            print (f'Congratulations, {name}')
+            print (f'Congratulations, {name}!')
 
 
     calc_games()
